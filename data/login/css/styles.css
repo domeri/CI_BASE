@@ -95,7 +95,8 @@ input {
 }
 
 input[type=name],
-input[type=password] {
+input[type=password], 
+#identity {
 	color: #777;
 	padding-left: 10px;
 	margin: 10px;

@@ -39,14 +39,14 @@
  */
 if ( ! function_exists('lang'))
 {
-	function lang($line, $id = '')
+	function lang($line, $id = '', $attributes = array())
 	{
 		$CI =& get_instance();
 		$line = $CI->lang->line($line);
 
 		if ($id != '')
 		{
-			$line = '<label for="'.$id.'">'.$line."</label>";
+			$line = '<label for="'.$id.'"'._stringify_attributes($attributes).'>'.$line."</label>";
 		}
 
 		return $line;
